@@ -1,0 +1,70 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/home/yuest/.nvm/v0.6.15/bin/npm', 'login' ]
+info using npm@1.1.16
+info using node@v0.6.15
+verbose config file /home/yuest/.npmrc
+verbose config file /home/yuest/.nvm/v0.6.15/etc/npmrc
+verbose config file /home/yuest/.nvm/v0.6.15/lib/node_modules/npm/npmrc
+verbose before first PUT { name: 'yuest',
+verbose before first PUT   salt: 'ae7a5ad9-0c54-4408-98c5-51381c892658',
+verbose before first PUT   password_sha: '8de1fd9efa150f85f3964fc4f617d093e24cabd9',
+verbose before first PUT   email: 'yuestwang@gmail.com',
+verbose before first PUT   _id: 'org.couchdb.user:yuest',
+verbose before first PUT   type: 'user',
+verbose before first PUT   roles: [],
+verbose before first PUT   date: '2012-04-23T16:07:42.903Z',
+verbose before first PUT   _rev: '1-4352f155f5f7b89566429fed068ed7d2' }
+verbose raw, before any munging /-/user/org.couchdb.user:yuest
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './-/user/org.couchdb.user:yuest' ]
+verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+http PUT https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+http 409 https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+verbose adduser update existing user
+verbose raw, before any munging /-/user/org.couchdb.user:yuest
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './-/user/org.couchdb.user:yuest' ]
+verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+http GET https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+http 200 https://registry.npmjs.org/-/user/org.couchdb.user:yuest
+verbose userobj { name: 'yuest',
+verbose userobj   salt: 'ae7a5ad9-0c54-4408-98c5-51381c892658',
+verbose userobj   password_sha: '8de1fd9efa150f85f3964fc4f617d093e24cabd9',
+verbose userobj   email: 'yuestwang@gmail.com',
+verbose userobj   _id: 'org.couchdb.user:yuest',
+verbose userobj   type: 'user',
+verbose userobj   roles: [],
+verbose userobj   date: '2012-04-23T16:07:42.903Z',
+verbose userobj   _rev: '1-4352f155f5f7b89566429fed068ed7d2' }
+verbose raw, before any munging /-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2' ]
+verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+http PUT https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+http 409 https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+verbose back from adduser [ [Error: conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2],
+verbose back from adduser   { error: 'conflict', reason: 'Document update conflict.' },
+verbose back from adduser   '{"error":"conflict","reason":"Document update conflict."}' ]
+ERR! Error: conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+ERR!     at Request._callback (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:183:12)
+ERR!     at Request.callback (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/node_modules/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/node_modules/request/main.js:605:16)
+ERR!     at Request.emit (events.js:67:17)
+ERR!     at IncomingMessage.<anonymous> (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/node_modules/request/main.js:564:14)
+ERR!     at IncomingMessage.emit (events.js:88:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR!     at CleartextStream.ondata (http.js:1150:24)
+ERR!     at CleartextStream._push (tls.js:375:27)
+ERR!     at SecurePair.cycle (tls.js:734:20)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 3.2.0-23-generic
+ERR! command "node" "/home/yuest/.nvm/v0.6.15/bin/npm" "login"
+ERR! cwd /home/yuest/SparkleShare/config
+ERR! node -v v0.6.15
+ERR! npm -v 1.1.16
+ERR! message conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+verbose exit [ 1, true ]
