@@ -1,11 +1,2 @@
-Congratulations, you've successfully created a SparkleShare repository!
-
-Any files you add or change in this folder will be automatically synced to 
-ssh://git@github.com/yuest/config and everyone connected to it.
-
-SparkleShare is a Free and Open Source software program that helps people 
-collaborate and share files. If you like what we do, please consider a small 
-donation to support the project: http://sparkleshare.org/support-us/
-
-Have fun! :)
+使用 (SparkleShare)[http://sparkleshare.org/support-us/] 自动同步分享的配置文件
 
