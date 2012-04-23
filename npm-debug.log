@@ -6,13 +6,13 @@ verbose config file /home/yuest/.npmrc
 verbose config file /home/yuest/.nvm/v0.6.15/etc/npmrc
 verbose config file /home/yuest/.nvm/v0.6.15/lib/node_modules/npm/npmrc
 verbose before first PUT { name: 'yuest',
-verbose before first PUT   salt: 'ae7a5ad9-0c54-4408-98c5-51381c892658',
-verbose before first PUT   password_sha: '8de1fd9efa150f85f3964fc4f617d093e24cabd9',
+verbose before first PUT   salt: 'ef97b8a4-4460-466e-a4c0-850ba834c117',
+verbose before first PUT   password_sha: 'c62a45cb6c5e6a0623e36fb51d82864e106134b9',
 verbose before first PUT   email: 'yuestwang@gmail.com',
 verbose before first PUT   _id: 'org.couchdb.user:yuest',
 verbose before first PUT   type: 'user',
 verbose before first PUT   roles: [],
-verbose before first PUT   date: '2012-04-23T16:07:42.903Z',
+verbose before first PUT   date: '2012-04-23T16:08:12.338Z',
 verbose before first PUT   _rev: '1-4352f155f5f7b89566429fed068ed7d2' }
 verbose raw, before any munging /-/user/org.couchdb.user:yuest
 verbose url resolving [ 'https://registry.npmjs.org/',
@@ -28,24 +28,29 @@ verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:yuest
 http GET https://registry.npmjs.org/-/user/org.couchdb.user:yuest
 http 200 https://registry.npmjs.org/-/user/org.couchdb.user:yuest
 verbose userobj { name: 'yuest',
-verbose userobj   salt: 'ae7a5ad9-0c54-4408-98c5-51381c892658',
-verbose userobj   password_sha: '8de1fd9efa150f85f3964fc4f617d093e24cabd9',
+verbose userobj   salt: 'ef97b8a4-4460-466e-a4c0-850ba834c117',
+verbose userobj   password_sha: 'c62a45cb6c5e6a0623e36fb51d82864e106134b9',
 verbose userobj   email: 'yuestwang@gmail.com',
 verbose userobj   _id: 'org.couchdb.user:yuest',
 verbose userobj   type: 'user',
 verbose userobj   roles: [],
-verbose userobj   date: '2012-04-23T16:07:42.903Z',
+verbose userobj   date: '2012-04-23T16:08:12.338Z',
 verbose userobj   _rev: '1-4352f155f5f7b89566429fed068ed7d2' }
 verbose raw, before any munging /-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
 verbose url resolving [ 'https://registry.npmjs.org/',
 verbose url resolving   './-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2' ]
 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
-http 409 https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
-verbose back from adduser [ [Error: conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2],
-verbose back from adduser   { error: 'conflict', reason: 'Document update conflict.' },
-verbose back from adduser   '{"error":"conflict","reason":"Document update conflict."}' ]
-ERR! Error: conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+http 401 https://registry.npmjs.org/-/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+verbose back from adduser [ [Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2],
+verbose back from adduser   { error: 'unauthorized',
+verbose back from adduser     reason: 'Name or password is incorrect.' },
+verbose back from adduser   '{"error":"unauthorized","reason":"Name or password is incorrect."}' ]
+WARN Incorrect username or password
+WARN You can reset your account by visiting:
+WARN     http://admin.npmjs.org/reset
+WARN 
+ERR! Error: unauthorized Name or password is incorrect.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
 ERR!     at Request._callback (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:183:12)
 ERR!     at Request.callback (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/node_modules/request/main.js:119:22)
 ERR!     at Request.<anonymous> (/home/yuest/.nvm/v0.6.15/lib/node_modules/npm/node_modules/request/main.js:605:16)
@@ -66,5 +71,5 @@ ERR! command "node" "/home/yuest/.nvm/v0.6.15/bin/npm" "login"
 ERR! cwd /home/yuest/SparkleShare/config
 ERR! node -v v0.6.15
 ERR! npm -v 1.1.16
-ERR! message conflict Document update conflict.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
+ERR! message unauthorized Name or password is incorrect.: -/user/org.couchdb.user:yuest/-rev/1-4352f155f5f7b89566429fed068ed7d2
 verbose exit [ 1, true ]
