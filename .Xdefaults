@@ -1,0 +1,7 @@
+URxvt*font:           xft:Inconsolata:size=12,xft:WenQuanYi Zen Hei:size=12
+URxvt*cursorColor:       #d8d8d8
+URxvt*colorBD:       lightyellow
+URxvt*colorUL:       yellow
+
+URxvt*background:        black
+URxvt*foreground:        green
