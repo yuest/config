@@ -27,4 +27,5 @@ xdg-user-dirs-gtk-update &
 /usr/lib/vino/vino-server --sm-disable &
 zeitgeist-datahub &
 dropbox start &
+sparkleshare start &
 ibus-daemon -d &
