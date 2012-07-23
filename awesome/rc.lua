@@ -14,7 +14,7 @@ require("rodentbane")
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "sakura"
+terminal = "terminator"
 editor = "gvim"
 editor_cmd = "gvim"
 
