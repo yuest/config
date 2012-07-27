@@ -170,6 +170,9 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
+    awful.key({ modkey,           }, "minus",  function () awful.util.spawn("vol_down") end),
+    awful.key({ modkey,           }, "equal",  function () awful.util.spawn("vol_up") end),
+    awful.key({ modkey, "Shift"   }, "minus",  function () awful.util.spawn("vol_up") end),
     awful.key({ modkey,           }, "v",      rodentbane.start         ),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
