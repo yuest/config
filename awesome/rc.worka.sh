@@ -1,4 +1,5 @@
 #ibus-daemon -d &
+fcitx &
 start-pulseaudio-x11 &
 start-pulseaudio-kde &
 echo 100000 | sudo tee /proc/sys/fs/inotify/max_user_watches
