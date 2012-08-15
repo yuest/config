@@ -1,0 +1,3 @@
+[submodule "awesome/rodentbane"]
+	path = awesome/rodentbane
+	url = git://git.glacicle.com/awesome/rodentbane.git
