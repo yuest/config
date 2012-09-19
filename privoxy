@@ -1,0 +1,3 @@
+listen-address  0.0.0.0:8118
+# forward-socks5 / localhost:7070 .
+actionsfile /Users/yuest/Dropbox/config/general/gfw.action
