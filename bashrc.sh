@@ -1,4 +1,4 @@
-if [ -f "$HOME/SparkleShare/config/.bashrc" ] ; then
-    . $HOME/SparkleShare/config/.bashrc
+if [ -f "$HOME/Dropbox/config/general/.bashrc" ] ; then
+    . $HOME/Dropbox/config/general/.bashrc
 fi
 

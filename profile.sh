@@ -1,4 +1,4 @@
-if [ -f "$HOME/SparkleShare/config/.profile" ] ; then
-    . $HOME/SparkleShare/config/.profile
+if [ -f "$HOME/Dropbox/config/general/.profile" ] ; then
+    . $HOME/Dropbox/config/general/.profile
 fi
 
