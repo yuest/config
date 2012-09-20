@@ -5,7 +5,7 @@ bluetooth-applet &
 /usr/lib/deja-dup/deja-dup/deja-dup-monitor &
 /usr/lib/gnome-disk-utility/gdu-notification-daemon &
 /usr/lib/gnome-settings-daemon/gnome-fallback-mount-helper &
- gnome-keyring-daemon --start --components=gpg &
+gnome-keyring-daemon --start --components=gpg &
 /usr/bin/gnome-keyring-daemon --start --components=pkcs11 &
 /usr/bin/gnome-keyring-daemon --start --components=secrets &
 /usr/bin/gnome-keyring-daemon --start --components=ssh &
@@ -26,6 +26,7 @@ update-notifier &
 xdg-user-dirs-gtk-update &
 /usr/lib/vino/vino-server --sm-disable &
 zeitgeist-datahub &
+
 dropbox start &
-sparkleshare start &
-ibus-daemon -d &
+#sparkleshare start &
+#ibus-daemon -d &

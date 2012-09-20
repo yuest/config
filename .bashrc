@@ -17,6 +17,6 @@ alias ic="git commit"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-[[ -s "$DCONF/local/bin/z" ]] && source "$DCONF/local/bin/z"
+#[[ -s "$DCONF/local/bin/z" ]] && source "$DCONF/local/bin/z"
 [[ -s "$DCONF/local/autoenv/activate.sh" ]] && source "$DCONF/local/autoenv/activate.sh"
 [[ -s "/usr/share/git-core/git-completion.bash" ]] && source /usr/share/git-core/git-completion.bash
